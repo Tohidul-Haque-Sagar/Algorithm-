@@ -107,9 +107,10 @@ int insertionSort() {
     c++;
     int key = data[i];
     int j = i-1;
-    while (key < data[j] && j >= 0) {
+    while (j >= 0 && key < data[j]) {
       data[j+1] = data[j];
       --j;
+      c++;
     }
     data[j+1] = key;
   }
@@ -121,9 +122,10 @@ int insertionSortDesending() {
     c++;
     int key = data[i];
     int j = i-1;
-    while (key > data[j] && j >= 0) {
+    while (j >= 0 && key > data[j]) {
       data[j+1] = data[j];
       --j;
+      c++;
     }
     data[j+1] = key;
   }

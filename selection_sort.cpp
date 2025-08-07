@@ -1,8 +1,12 @@
 #include <stdio.h>
 int main(){
   int S[20], n,i,j;
-  printf("How many element you want to sorted \n");
+  printf("How many element you want to sorted (max 20)\n");
   scanf("%d", &n);
+  if(n <= 0 || n > 20) {
+    printf("Error: Number of elements must be between 1 and 20\n");
+    return 1;
+  }
   printf("Enter number here\n");
   for (i= 0; i < n; i++){
     scanf("%d", &S[i]);

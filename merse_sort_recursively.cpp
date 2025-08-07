@@ -42,7 +42,7 @@ void merger(int left[],int leftsize,int right[],int rightsize,int arr[]){
             itR++;
             itA++;
     }
-    while(itL<rightsize){
+    while(itL<leftsize){
             arr[itA]=left[itL];
             itL++;
             itA++;
